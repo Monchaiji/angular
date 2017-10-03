@@ -3,7 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { RouterModule,Routes } from '@angular/router';
-import { MatButtonModule,MatDialogModule } from '@angular/material';
+import { MatButtonModule,MatDialogModule,MatGridListModule } from '@angular/material';
 
 import { DataService } from './data.service';
 
@@ -65,6 +65,7 @@ const appRoutes: Routes = [
     HttpClientModule,
     MatButtonModule,
     MatDialogModule,
+    MatGridListModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true }
