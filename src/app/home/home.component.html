@@ -5,4 +5,9 @@
 <app-compo1 [title]="title_home" (sayhi)="func_change_callback($event)">
 </app-compo1>
 
+
+<div class="button-row">
+  <button (click)="open_dialog()" md-raised-button color="accent">Dialog</button>
+</div>
+<br>
 <a routerLink="/page1">page1</a>

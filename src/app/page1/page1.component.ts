@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 
+
 @Component({
   selector: 'app-page1',
   templateUrl: './page1.component.html',
@@ -16,5 +17,7 @@ export class Page1Component implements OnInit {
 
   ngOnInit() {
   }
+
+  
 
 }

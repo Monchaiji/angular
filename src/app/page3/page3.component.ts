@@ -10,10 +10,13 @@ import { Location } from '@angular/common';
 
 export class Page3Component implements OnInit {
   id:any;
+  query_string:any;
   constructor(public activeRoute:ActivatedRoute,public location:Location){
   	this.activeRoute.params.subscribe((param)=>{
   		this.id = param['id'];
-  	});
+    });
+    
+    this.query_string = this.activeRoute.snapshot.queryParams['param'];
   }
   
   back(){

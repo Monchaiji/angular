@@ -3,6 +3,9 @@
 </p>
 <p>ID : {{ id }}</p>
 
+<p *ngIf="query_string">
+  Query String (param) : {{ query_string }}
+</p>
 <button (click)="back()">
 	back
 </button>

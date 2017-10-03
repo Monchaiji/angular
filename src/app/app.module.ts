@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { RouterModule,Routes } from '@angular/router';
+import { MatButtonModule,MatDialogModule } from '@angular/material';
 
 import { DataService } from './data.service';
 
@@ -13,6 +15,7 @@ import { Page3Component } from './page3/page3.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { Compo1Component } from './compo1/compo1.component';
 import { HttpClientModule } from '@angular/common/http';
+import { Dialog1Component } from './dialog1/dialog1.component';
 
 const appRoutes: Routes = [
   {
@@ -50,11 +53,18 @@ const appRoutes: Routes = [
     Page2Component,
     Page3Component,
     NotfoundComponent,
-    Compo1Component
+    Compo1Component,
+    Dialog1Component,
+  ],
+  entryComponents:[
+    Dialog1Component
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     HttpClientModule,
+    MatButtonModule,
+    MatDialogModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true }

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MdDialog, MdDialogRef, MD_DIALOG_DATA } from '@angular/material';
+
+import { Dialog1Component } from '../dialog1/dialog1.component';
 
 @Component({
   selector: 'app-home',
@@ -8,13 +11,22 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   title_home = "top";
   callback:any;
-  constructor() { }
+  constructor(public dialog: MdDialog,) { }
 
   ngOnInit() {
   }
   
   func_change_callback(title){
   	this.callback = title;
+  }
+  open_dialog(){
+    let dialogRef = this.dialog.open(Dialog1Component, {
+      width: '250px'
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
   }
 
 }
