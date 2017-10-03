@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { RouterModule,Routes } from '@angular/router';
 
+import { DataService } from './data.service';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { Page1Component } from './page1/page1.component';
@@ -10,6 +12,7 @@ import { Page2Component } from './page2/page2.component';
 import { Page3Component } from './page3/page3.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { Compo1Component } from './compo1/compo1.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes: Routes = [
   {
@@ -51,12 +54,13 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true }
     )
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
