@@ -1,0 +1,7 @@
+[
+    {"id":1,"first_name":"Micheal","last_name":"Millican","email":"mmillican0@patch.com","gender":"Male","ip_address":"173.84.9.3"},
+    {"id":2,"first_name":"Trevor","last_name":"Teideman","email":"tteideman1@pbs.org","gender":"Male","ip_address":"22.14.98.206"},
+    {"id":3,"first_name":"Kennedy","last_name":"Baudic","email":"kbaudic2@si.edu","gender":"Male","ip_address":"194.170.192.227"},
+    {"id":4,"first_name":"Arnoldo","last_name":"Stobbie","email":"astobbie3@google.nl","gender":"Male","ip_address":"90.233.46.3"},
+    {"id":5,"first_name":"Gideon","last_name":"McEnhill","email":"gmcenhill4@samsung.com","gender":"Male","ip_address":"134.38.191.179"}
+]
